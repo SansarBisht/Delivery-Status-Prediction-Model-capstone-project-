@@ -27,13 +27,7 @@ is significant.
 * Predictive Models Using algorithms to predict the missing values based on other features. 
 Encoding Categorical Variables 
 Categorical variables, which represent discrete values (like "red," "blue," "green"), need to be 
-converted into numerical format for most machine learning algorithms. Common techniques 
-include: 
-* One-Hot Encoding Creates a new binary column for each category (e.g., for a "Color" 
-feature with values "red," "blue," "green," you would get three new columns, each 
-representing one of the colours).
-* Label Encoding Assigns a unique integer to each category (e.g., "red" = 0, "blue" = 1, 
-"green" = 2). 
+converted into numerical format for most machine learning algorithms. 
 Normalizing Numerical Features 
 Normalization scales numerical data to a standard range, which helps some algorithms like 
 gradient descent converge faster. Key methods are: 
@@ -46,16 +40,7 @@ customer categories, order zones, and product characteristics.
 random forests to predict delivery status. 
 5. Model Evaluation Evaluate models using performance metrics such as accuracy, precision, 
 recall, and F1-score. 
-* Accuracy The proportion of correctly predicted instances (both true positives and true 
-negatives) out of the total predictions. 
-* Precision The ratio of true positives to the sum of true positives and false positives, 
-measuring the accuracy of positive predictions. 
-* Recall The ratio of true positives to the sum of true positives and false negatives, 
-indicating how well the model captures actual positives. 
-* F1-Score The harmonic mean of precision and recall, balancing the two metrics to handle 
-imbalanced datasets. 
-* ROC AUC Score The area under the ROC curve, representing the model's ability to 
-distinguish between classes across different thresholds, where a score of 1 indicates 
-perfect classification. 
-6. Conclusion & Reporting Report findings and insights into the factors that influence delivery 
-success, with recommendations for improving supply chain performance.
+Summary
+Key improvements include SMOTE for enhanced recall and hyperparameter tuning for better precision and balance, addressing limitations of the baseline model.
+6. Conclusion
+The model-building process effectively identified delivery delays by leveraging advanced techniques such as SMOTE for class balancing, hyperparameter tuning, and ensemble methods. The LGBM SMOTE Tuned model demonstrated the best performance with a strong balance of recall and overall metrics, making it ideal for identifying delays while minimizing missed predictions. These models provide a robust framework for improving operational efficiency and ensuring timely deliveries, aligning with the goal of optimizing logistics and enhancing customer satisfaction.
